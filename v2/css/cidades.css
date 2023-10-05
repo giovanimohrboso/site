@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+main#cidades {
+    background-color: white;
+    margin: auto;
+    margin-bottom: 0px;
+    max-width: 1020px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 0px 0px 3px 3px;
+}
+
+h1 {
+    text-align: left;
+    text-decoration: none;
+    color: var(--cor5);
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor5);
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+p {
+    font-size: 1em;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul#album-cidades{
+    width: auto;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-cidades li{
+    display: inline-block;
+    text-align: center;
+    max-width: 180px;
+    height: 270px;
+    margin: 5px;
+    border: 5px solid #ffffff;
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+ul#album-cidades img {
+    width: 100%;
+}
+
+ul#album-fotos{
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li{
+    float: left;
+    max-width: 200px;
+    height: 300px;
+    margin: 5px;
+    border: 5px solid #ffffff;
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+ul#album-fotos img {
+    width: 100%;
+}
+
+

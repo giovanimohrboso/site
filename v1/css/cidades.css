@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 10pt;
+    font-weight: bold;
+}
+img#historia{
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+p#historia{
+    font-family: Arial;
+    font-size: 12pt;
+    text-align: justify;
+    text-indent: 0px;
+}
+
+ul#album-cidades{
+    width: auto;
+    margin: 0px auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-cidades li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all .4s ease-in;
+}
+ul#album-cidades li span{
+    opacity: 1;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,0);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+ul#album-cidades li:hover span{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    opacity: 1;
+}
+ul#album-cidades li:hover{
+    transform: scale(1.5);
+}
+
+ul#album-cidades li#saoroque-sp{
+    background: url('../cidades/saoroque-sp/imagens/fotocapa.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-cidades li#saoroque-sp:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-cidades li#saopedro-sp{
+    background: url('../cidades/saopedro-sp/imagens/fotocapa.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-cidades li#saopedro-sp:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-cidades li#serranegra-sp{
+    background: url('../cidades/serranegra-sp/imagens/fotocapa.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-cidades li#serranegra-sp:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+
+ul#album-fotos{
+    width: auto;
+    margin: 10px;
+    padding: 70px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-fotos li{
+    float: left;
+    width: 250px;
+    height: 380px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}

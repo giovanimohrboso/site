@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TURISDOGANDO : Seu Roteiro 4 Patas</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cidades.css">
+  <script src="funcoes/script.js"></script>
+
+</head>
+<body>
+    <div id="interface">
+
+      <header id="cabecalho">
+        <img id="icone" src="imagens/mapa.png" alt="" >
+        <img id="logo" src="imagens/TURISDOGANDO.png" alt="Turismo de 4 patas">
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul type="disc">
+            <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/mapa.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaFoto('imagens/mapa.png')" onmouseout="mudaFoto('imagens/mapa.png')"><a href="cidades.html">Cidades</a></li>
+            <li onmouseover="mudaFoto('imagens/dica.png')" onmouseout="mudaFoto('imagens/mapa.png')"><a href="dicas.html">Dicas</a></li>
+            <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/mapa.png')"><a href="contato.html">Fale conosco</a></li>
+          </ul>
+      </nav>
+      </header>
+
+      <section id="cidades">
+        <h1 id="titulo">Cidades</h1>
+        <ul id="album-cidades">
+        <!-- <li id="aguasdesaopedro-sp"><a href="/cidades/aguasdesaopedro-sp.html"><span>Aguas de São Pedro - SP</span></a></li>
+          <li id="boituva-sp"><a href="/cidades/boituva-sp.html"><span>Boituva - SP</span></a></li>
+          <li id="cerquilho-sp"><a href="/cidades/cerquilho-sp.html"><span>Cerquilho - SP</span></a></li>
+          <li id="portofeliz-sp"><a href="/cidades/portofeliz-sp.html"><span>Porto Feliz - SP</span></a></li> --> 
+          <li id="saopedro-sp"><a href="cidades/saopedro-sp/saopedro-sp.html"><span>São Pedro - SP</span></a></li>
+          <li id="saoroque-sp"><a href="cidades/saoroque-sp/saoroque-sp.html"><span>São Roque - SP</span></a></li>
+          <li id="serranegra-sp"><a href="cidades/serranegra-sp/serranegra-sp.html"><span>Serra Negra - SP</span></a></li>
+          <!--<li id="tiete-sp"><a href="/cidades/tiete-sp.html"><span>Tietê - SP</span></a></li>  -->
+        </ul>
+      </section>
+      <footer id="rodape">Turisdogando - 2023</footer>
+    </div>
+</body>
+</html>

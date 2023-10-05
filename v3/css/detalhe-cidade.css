@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+:root {
+    --cor0:hsla(147, 78%, 93%, 0.689);
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section#container-detalhe{
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+    background-color:var(--cor0);
+    border-radius: 0px 0px 10px 10px;
+}
+div#detalhe-historia h3{
+    font-size: .8em;
+    color: var(--cor5);
+}
+
+div#detalhe-historia h1{
+    margin: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    color: var(--cor5);
+}
+
+div#detalhe-historia p{
+    margin: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1em;
+}
+
+
+div.detalhe-cidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1vw;
+}
+
+div.foto-cidade {
+    width: 320px;
+    height: 600px;
+    border: 2px solid var(--cor4);
+    border-radius: 10px;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+div.foto-cidade img {
+    position: relative;
+    padding: 5px;
+    margin: 2px;
+    width: 312px;
+    height: 420px;
+    border-radius: 9px;
+    background-color: var(--cor1);
+}
+
+div.foto-cidade > a{
+    width: 320px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.foto-cidade p{
+    padding: 2px 8px 0px 8px;
+    color: var(--cor5);
+    text-align: justify;
+    text-decoration: none;
+}
+
+div.menus {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: inline;
+    float: inline;
+
+}
+
+div.menus img {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    margin-top: 0px;
+    border-radius: 5px;
+    
+}
+
+div.menus p{
+    position: relative;
+    display: inline;
+    top:-15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media (min-width:1000px){
+
+    div.foto-cidade:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:450px){
+    a.foto-cidade{
+        height: 590px;
+    }
+    div#detalhe-historia p{
+        margin: 5px;
+        text-align: justify;
+        text-indent: 10px;
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,134 @@
+
+h1#titulo {
+    font: 20pt;
+    color: rgb(147, 144, 144);
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+p{
+    font-size: 15pt;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 180px;
+    background-color:rgb(247, 247, 247);
+    border-radius: 5%;
+}
+header#cabecalho img#logo{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    float: right;
+    
+}
+header#cabecalho img#icone{
+    position: relative;
+    width: 120px;
+    left: 30px;
+    top: 50px;
+}
+body {
+    background-color: rgb(240, 237, 237);
+    font: 15px Arial;
+}
+div#interface{
+    width: 1000px;
+    height: auto;
+    background: url("../imagens/fundopatinhas.png");
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+}
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: 1s;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+nav#menu a:hover{
+    color: white;
+}
+section#corpo {
+    display: block;
+    border-right: 10px;
+    padding-right: 15px;
+    width: 600px;
+    float: left;
+
+}
+section#corpo p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+aside#destaque {
+    display: block;
+    float: right;
+    text-align: center;
+    width: 350px;
+}
+figure.foto-destaque{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 5px 5px 10px;
+}
+figure.foto-destaque img{
+    height: 100%;
+    width: 100%;
+}
+figure.foto-destaque figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-destaque:hover figcaption{
+    opacity: 1;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px){
+    
+    
+}
