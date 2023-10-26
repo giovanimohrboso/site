@@ -27,35 +27,37 @@ class FotosCidades extends HTMLElement{
 
         componentRoot.appendChild(linkCidade);
 
-     //   if(this.hasOwnProperty('como-chegar')){
-            const menus = document.createElement("div");
-            menus.setAttribute("class","menus")
-            componentRoot.appendChild(menus);
-    //        if(this.getAttribute("como-chegar") != ""){
-                const comoChegar = document.createElement("a");
-                comoChegar.setAttribute("class","menu")
-                comoChegar.href = this.getAttribute("como-chegar");
-                comoChegar.target = "_blank";
+        const menus = document.createElement("div");
+        menus.setAttribute("class","menus")
+        componentRoot.appendChild(menus);
 
-                const imgComoChegar = document.createElement("img");
-                imgComoChegar.src = "../../imagens/como-chegar.png"
-                
-                comoChegar.appendChild(imgComoChegar);
-                menus.appendChild(comoChegar);
-    //        }
-    //        if(this.getAttribute("link-externo") != ""){
-                const linkExterno = document.createElement("a");
-                linkExterno.setAttribute("class","menu");
-                linkExterno.href = this.getAttribute("link-externo");
-                linkExterno.target = "_blank";
+        const comoChegar = document.createElement("a");
+        comoChegar.setAttribute("class","menu")
+        comoChegar.href = (this.getAttribute("como-chegar") || "https://www.padrao.com.br/");
+        comoChegar.target = "_blank";
 
-                const imagemLink = document.createElement("img");
-                imagemLink.src = "../../imagens/link-externo.png"
+        const imgComoChegar = document.createElement("img");
+        imgComoChegar.src = "../../imagens/como-chegar.png";
+        imgComoChegar.title = "Como Chegar";
 
-                linkExterno.appendChild(imagemLink);
-                menus.appendChild(linkExterno);
-    //        }
-    //    }
+        if (comoChegar.href != "https://www.padrao.com.br/"){
+            comoChegar.appendChild(imgComoChegar);
+            menus.appendChild(comoChegar);
+        }
+
+        const linkExterno = document.createElement("a");
+        linkExterno.setAttribute("class","menu");
+        linkExterno.href = (this.getAttribute("link-externo") || "https://www.padrao.com.br/");
+        linkExterno.target = "_blank";
+
+        const imagemLink = document.createElement("img");
+        imagemLink.src = "../../imagens/link-externo.png";
+        imagemLink.title = (this.getAttribute("tituloLink") || linkExterno.href);
+
+        if (linkExterno.href != "https://www.padrao.com.br/"){
+            linkExterno.appendChild(imagemLink);
+            menus.appendChild(linkExterno);
+        }
 
         return componentRoot;
     }
@@ -156,10 +158,7 @@ class FotosCidades extends HTMLElement{
                 font-size: 0.9em;
             }
         }
-
-
         `
-
         return estilo;
 
     }
