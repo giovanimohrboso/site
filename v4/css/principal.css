@@ -1,0 +1,143 @@
+@charset "UTF-8";
+:root {
+    --cor0:hsla(147, 78%, 93%, 0.689);
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body div#redes-sociais {
+    background-color:var(--cor1);
+    height: 40px;
+}
+
+body img#instagram {
+    width: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: transform .4s;
+}
+
+body img#youtube {
+    width: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: transform .4s;
+}
+
+
+
+header {
+    background-color: var(--cor1);
+    text-align: center;
+}
+
+nav#menuprincipal {
+    background-color: var(--cor3);
+    padding: 10px;
+
+}
+nav#menuprincipal a {
+    color: var(--cor5);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+nav#menuprincipal a:hover {
+    text-decoration: underline;
+    background-color: var(--cor4);
+    color: white;
+
+}
+body {
+    background: url("../imagens/fundopatinhas.png")
+}
+
+section#container{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+    background-color:var(--cor0);
+    border-radius: 0px 0px 10px 10px;
+}
+
+div#historia p{
+    padding: 5px;
+    margin: 5px;
+    text-align: justify;
+    text-indent: 20px;
+}
+div#destaque {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: var(--cor1);
+}
+
+div#destaque h1{
+    font-size: 1.5em;
+    background-color: var(--cor3);
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: black;
+}
+
+div#destaque h2{
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: center;
+    color: var(--cor5);
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width:700px){
+    section#container{
+        display: block;
+        margin: auto;
+    }
+    div#destaque img{
+        width: 100%;
+    }
+    nav#menuprincipal a {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+
+}
+
+@media (min-width:1000px){
+    body img#instagram:hover {
+        transform: scale(1.2);
+    }
+    body img#youtube:hover {
+        transform: scale(1.2);
+    }
+}
